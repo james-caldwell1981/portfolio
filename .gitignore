@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Misc Files
+.idea/
+SQL.py
+*.7z
+james-caldwell1981-master/

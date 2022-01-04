@@ -1,0 +1,4 @@
+{% macro row(page_heading, page_content) %}
+    {% block heading %}{{ page_heading }}{% endblock %}
+    {% block content %}{{ page_content }}{% endblock %}
+{% endmacro %}
