@@ -12,7 +12,7 @@ app = Flask(__name__)
 def landing():  # put application's code here
 
     #TODO Create page classes
-    heading1 = 'Etiam finibus tempus felis eget ullamcorper'
+    heading1 = 'TESTING TESTING'
     content1 = 'Cras pellentesque neque, consectetur adipiscing elit. Fusce venenatis elit ac ligula euismod varius. Maecenas feugiat purus quam, vel aliquet tellus sodales eu. Integer vitae vestibulum turpis, in sollicitudin quam. Aliquam vulputate non felis non luctus. Vestibulum eget augue nulla. Aliquam dignissim nibh mi, ut bibendum quam dapibus eget. Nam nec nisi vel sapien pulvinar ultrices. Curabitur rutrum nisl sagittis, pretium velit eget, convallis lacus. Nulla fermentum nulla ut lacus maximus, ut porttitor neque varius. Nullam sed vulputate sem. Sed bibendum porttitor metus.'
 
     heading2 = 'Fusce venenatis elit'
