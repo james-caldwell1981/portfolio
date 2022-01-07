@@ -12,7 +12,7 @@ app = Flask(__name__)
 def landing():  # put application's code here
 
     #TODO Create page classes
-    heading1 = 'TESTING TESTING'
+    heading1 = 'Etiam finibus tempus felis eget ullamcorper'
     content1 = 'Cras pellentesque neque, consectetur adipiscing elit. Fusce venenatis elit ac ligula euismod varius. Maecenas feugiat purus quam, vel aliquet tellus sodales eu. Integer vitae vestibulum turpis, in sollicitudin quam. Aliquam vulputate non felis non luctus. Vestibulum eget augue nulla. Aliquam dignissim nibh mi, ut bibendum quam dapibus eget. Nam nec nisi vel sapien pulvinar ultrices. Curabitur rutrum nisl sagittis, pretium velit eget, convallis lacus. Nulla fermentum nulla ut lacus maximus, ut porttitor neque varius. Nullam sed vulputate sem. Sed bibendum porttitor metus.'
 
     heading2 = 'Fusce venenatis elit'
@@ -58,7 +58,7 @@ def landing():  # put application's code here
 
     rows = [[heading1, content1], [heading2, content2], [heading3, content3]]
     return render_template('page_intro.html',
-                           title='Viral',
+                           title='TESTING TESTING',
                            articles=articles,
                            projects=projects,
                            kaggles=kaggles,
