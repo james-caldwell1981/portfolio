@@ -69,10 +69,10 @@ def landing():  # put application's code here
 @app.route('/update_server', methods=['POST'])
 def update_server():
     if request.method == 'POST':
-        #x_hub_signature = request.headers.get('X-Hub-Signature-256')
-        #private_key = environ['SECRET_KEY']
-        #if not is_valid_signature(x_hub_signature, request.data(), private_key):
-        #    return 'Invalid signature.'
+        x_hub_signature = request.headers.get('X-Hub-Signature')
+        private_key = environ['SECRET_KEY']
+        if not is_valid_signature(x_hub_signature, request.data(), private_key):
+            return 'Invalid signature.'
 
         repo = Repo('/home/jamescaldwell1981/portfolio')
         origin = repo.remotes.origin
