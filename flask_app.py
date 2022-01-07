@@ -1,9 +1,7 @@
 from os import environ
-from flask import Flask, request
-from flask import render_template
+from flask import Flask, request, render_template
 from git import Repo
 from pa_val import is_valid_signature
-
 
 app = Flask(__name__)
 
@@ -58,7 +56,7 @@ def landing():  # put application's code here
 
     rows = [[heading1, content1], [heading2, content2], [heading3, content3]]
     return render_template('page_intro.html',
-                           title='TESTING TESTING',
+                           title='Viral',
                            articles=articles,
                            projects=projects,
                            kaggles=kaggles,
