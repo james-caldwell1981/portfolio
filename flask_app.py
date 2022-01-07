@@ -1,7 +1,7 @@
 from os import environ
 from flask import Flask, request, render_template
 from git import Repo
-from pa_val import is_valid_signature
+from validation import is_valid_signature
 
 app = Flask(__name__)
 
