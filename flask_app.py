@@ -56,7 +56,7 @@ def landing():  # put application's code here
 
     rows = [[heading1, content1], [heading2, content2], [heading3, content3]]
     return render_template('page_intro.html',
-                           title='Viral',
+                           title='Testing',
                            articles=articles,
                            projects=projects,
                            kaggles=kaggles,
