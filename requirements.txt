@@ -1,9 +1,14 @@
 click==8.0.3
 colorama==0.4.4
 Flask==2.0.2
+gitdb==4.0.9
+GitPython==3.1.24
 itsdangerous==2.0.1
 Jinja2==3.0.3
 MarkupSafe==2.0.1
+python-dotenv==0.19.2
+smmap==5.0.0
 style==1.1.0
+typing-extensions==4.0.1
 update==0.0.1
 Werkzeug==2.0.2

@@ -1,7 +1,7 @@
 from os import environ
 from flask import Flask, request
 from flask import render_template
-import git
+from git import Repo
 from pa_val import is_valid_signature
 
 
@@ -72,11 +72,11 @@ def landing():  # put application's code here
 def update_server():
     if request.method == 'POST':
         x_hub_signature = request.headers.get('X - Hub - Signature')
-        private_key = environ['SECRET_TOKEN']
+        private_key = environ['SECRET_KEY']
         if not is_valid_signature(x_hub_signature, request.data, private_key):
             return 'Invalid signature.'
 
-        repo = git.Repo('/home/jamescaldwell1981/portfolio')
+        repo = Repo('/home/jamescaldwell1981/portfolio')
         origin = repo.remotes.origin
         origin.pull()
 
