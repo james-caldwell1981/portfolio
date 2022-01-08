@@ -1,6 +1,7 @@
 from os import environ
 from flask import Flask, request, render_template
 from git import Repo
+from pages.build_page import Page
 from validation import is_valid_signature
 
 app = Flask(__name__)
