@@ -135,3 +135,4 @@ SQL.py
 *.7z
 james-caldwell1981-master/
 remote_config.txt
+project_staging/*
