@@ -55,21 +55,40 @@ def landing():  # put application's code here
         ('Name 4', '#'),
     ]
 
+    contact = 'templates/contact.html'
+
     rows = [[heading1, content1], [heading2, content2], [heading3, content3]]
 
     # This is currently how the page is populated
     # Individual sections are a list of most recent items
     # This should be updated in the future for readability and modularity
     return render_template('page_intro.html',
-                           title='Viral',
+                           title='Data James',
                            articles=articles,
                            projects=projects,
                            kaggles=kaggles,
                            tutorials=tutorials,
                            experiments=experiments,
+                           contact=contact,
                            rows=rows,
                            custom_layout=None,
                            custom_script=None)
+
+
+@app.route('/contact')
+def contact():
+
+    title = 'Get in Touch!'
+    body = '        \
+        At the moment, I will be interacting with everyone through my <a href="#">LinkedIn account</a>.<br /> \
+        Future plans would include both an email option and direct message through this webpage.<br /> \
+        I welcome all constructive criticisms, suggestions, content/functionality requests, etc.<br /> \
+        Hope to hear from you soon! \
+        '
+    return render_template('contact.html',
+                           title=title,
+                           body=body
+                           )
 
 
 @app.route('/update_server', methods=['POST'])
