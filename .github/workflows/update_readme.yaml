@@ -23,14 +23,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: install jinja
-        run: pip install jinja2
-        
-      # Check directory
-      - name: directory
-        run: dir
         
       # Runs a command using the runner shell
       - name: update main readme
@@ -41,7 +33,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git commit -m "update data" -a
+          git commit -m "update main readme" -a
           
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
