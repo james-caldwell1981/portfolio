@@ -9,7 +9,7 @@ def get_content(repo_directories):
             desc_end_idx = tmp_contents.find('-->')
             desc = tmp_contents[9:desc_end_idx]
 
-        return_content[directory] = (tmp_contents, desc)
+        return_content[directory] = (tmp_contents, desc.strip('<!--DESC').strip('-->'))
 
     return return_content
 
