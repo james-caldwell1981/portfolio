@@ -1,5 +1,4 @@
-##Static Folder
-
+<!--DESC Static Files-->
 ###CSS
 ####This directory contains all stylesheets for the templates.
 
