@@ -31,3 +31,8 @@ jobs:
       # Runs a command using the runner shell
       - name: update main readme
         run: python ./.github/workflows/update_readme/update_readme.py
+        
+      # Check directory
+      - name: directory
+        run: dir
+      
