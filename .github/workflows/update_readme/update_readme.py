@@ -9,7 +9,7 @@ repo_directories = (
 def get_content(repo_directories):
     return_content = {}
 
-    for directory in repo_directories:
+    if directory in repo_directories:
         new_content = Path(f'{directory}_readme.md').read_text()
         return_content[directory] = (directory, new_content)
 
