@@ -2,7 +2,7 @@ def get_content(repo_directories):
     return_content = {}
 
     for directory in repo_directories:
-        with open(f'../../../{directory}/{directory}_readme.md') as fh:
+        with open(f'./{directory}/{directory}_readme.md') as fh:
             tmp_contents = fh.read()
             print(tmp_contents)
 
@@ -23,7 +23,7 @@ repo_directories = (
 
 main_readme_path = 'README.md'
 # Uncomment for local development
-main_readme_path = '../../../README.md'
+#main_readme_path = '../../../README.md'
 
 content = get_content(repo_directories)
 table_of_contents = ''
