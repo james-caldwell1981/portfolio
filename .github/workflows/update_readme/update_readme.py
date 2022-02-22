@@ -7,7 +7,7 @@ def get_content(repo_directories):
 
     for directory in repo_directories:
         if directory in repo_directories:
-            new_content = Path(f'{directory}_readme.md').read_text()
+            new_content = Path(f'{directory}/{directory}_readme.md').read_text()
             return_content[directory] = (directory, new_content)
 
     return return_content
