@@ -19,7 +19,7 @@ def get_content(repo_directories):
 main_readme_template_path = 'README.md'
 
 template = Template(Path(main_readme_template_path).read_text())
-Path(readme_path).write_text(
+Path(main_readme_template_path).write_text(
         template.render(
             table_of_contents='Testing',
             body=get_content(['.github/workflows']),
