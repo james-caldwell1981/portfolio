@@ -23,6 +23,6 @@ template = Template(Path(main_readme_template_path).read_text())
 Path(readme_path).write_text(
         template.render(
             table_of_contents='Testing',
-            body='1, 2, 3',
+            body=get_content(['.github/workflows']),
             )
         )
