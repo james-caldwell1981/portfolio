@@ -38,7 +38,7 @@ for heading, body_desc in content.items():
 
         heading = f'<a id=\"{heading}\"></a>[{heading_upper}]({heading}/)'
 
-        content_body += f'##{(heading)}\n\n'
+        content_body += f'##{body_desc[0]}\n\n'
 
         i += 1
         print(heading, content_body)
