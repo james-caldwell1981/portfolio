@@ -27,12 +27,13 @@ jobs:
       # Runs a single command using the runners shell
       - name: install jinja
         run: pip install jinja2
-
-      # Runs a command using the runner shell
-      - name: update main readme
-        run: python ./.github/workflows/update_readme/update_readme.py
         
       # Check directory
       - name: directory
         run: dir
+        
+      # Runs a command using the runner shell
+      - name: update main readme
+        run: python ./.github/workflows/update_readme/update_readme.py
+
       
