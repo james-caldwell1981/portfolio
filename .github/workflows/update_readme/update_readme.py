@@ -16,7 +16,7 @@ def get_content(repo_directories):
     return return_content
 
 
-main_readme_template_path = '../../README.md'
+main_readme_template_path = 'README.md'
 readme_path = '../../../README.md'
 
 template = Template(Path(main_readme_template_path).read_text())
