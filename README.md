@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1. [Static](#static) -  Static Files
 2. [Templates](#templates) -  Page Templates
 3. [Pages](#pages) -  Page Build Definitions
@@ -21,3 +22,14 @@
 
 ###This folder contains page definitions to build each type of page used on the website.
 
+=======
+1. [Static](#static) - tatic Files
+2. [Templates](#templates) - Page Templates
+3. [Pages](#pages) - Page Build Definitions
+##<a id="static"></a>[Static](static/)
+
+##<a id="templates"></a>[Templates](templates/)
+
+##<a id="pages"></a>[Pages](pages/)
+
+>>>>>>> 0863aa4d8f7edc341c78422fb43097bfc692ab86
