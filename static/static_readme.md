@@ -1,12 +1,12 @@
 <!--DESC Static Files-->
-###CSS
-####This directory contains all stylesheets for the templates.
+###CSS<br />
+####This directory contains all stylesheets for the templates.<br />
 
-###Images
-####This directory contains all images for the templates.
+###Images<br />
+####This directory contains all images for the templates.<br />
 
-###Scripts
-####Contains all scripts. This currently only contains javascript/jquery.
+###Scripts<br />
+####Contains all scripts. This currently only contains javascript/jquery.<br />
 
-###Viral
-####This is the original folder which contained the files from OS Templates.
+###Viral<br />
+####This is the original folder which contained the files from OS Templates.<br /><br />
