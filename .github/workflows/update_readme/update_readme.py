@@ -10,6 +10,8 @@ def get_content(repo_directories):
     return_content = {}
 
     for directory in repo_directories:
+        if not directory:
+            break
         new_content = Path('../../../' + directory + '/' + directory + '_readme.md').read_text()
         return_content[directory] = (directory[0].upper() + directory[1:], new_content)
 
