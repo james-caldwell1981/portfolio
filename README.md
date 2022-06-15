@@ -34,13 +34,10 @@ visualizations, etc.
 ### [Viral](static/viral)<br />
 #### This is the original folder which contained the files from OS Templates.<br /><br />
 
-
 ## [Templates](templates/templates_readme.md)
-
 ### This folder contains all templates for creating the web pages along with a file for storing jinja macros.<br /> 
 
 
 ## [Pages](pages/pages_readme.md)
-
 ### This folder contains page definitions to build each type of page used on the website.<br />
 
